@@ -2,6 +2,7 @@ import styled from 'styled-components'
 import Image from 'next/image'
 
 export const Info = styled.div`
+  height: 100vh;
   color: #fff;
   padding: 200px 0;
   background: ${({ lightBg }) => (lightBg ? '#BCC6E0' : '#1B2339')};
