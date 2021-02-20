@@ -100,12 +100,12 @@ export const Button = styled.button`
   outline: none;
   border: none;
   cursor: pointer;
-  box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.529);
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.529);
 
-  &::hover{
+  &:hover{
     transition: all 0.3s ease-out;
-    background: #fff;
-    background: ${({ primary }) => (primary ? '#0467FB' : '#4B59F7')};
+    transform: scale(1.1);
+    filter: brightness(120%);
   }
 
   @media screen and (max-width: 960px){
