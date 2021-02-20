@@ -13,7 +13,7 @@ export const profile = {
   url: 'https://github.com/MatteoDigiorgio',
   profile: 'true',
   alt: 'Image',
-  img: '/me.jpg',
+  img: '/me.svg',
   imgWidth: '300',
   imgHeight: '300'
 }
@@ -33,9 +33,9 @@ export const portfolio = {
   url: 'https://github.com/MatteoDigiorgio/Portfolio',
   profile: '',
   alt: 'Image',
-  img: '/web.svg',
-  imgWidth: '400',
-  imgHeight: '400'
+  img: '/portfolio.svg',
+  imgWidth: '600',
+  imgHeight: '365'
 }
 
 export const foodazon = {
@@ -48,14 +48,14 @@ export const foodazon = {
   lightTextDesc: false,
   topLine: 'Mongodb / Expressjs / Angular / Nodejs',
   headLine: 'foodazon',
-  description: 'Ecommerce for local market',
+  description: 'Ecommerce for local markets',
   buttonLabel: 'View Code',
   url: 'https://github.com/MatteoDigiorgio/foodazon',
   profile: '',
   alt: 'Image',
-  img: '/web.svg',
-  imgWidth: '400',
-  imgHeight: '400'
+  img: '/foodazon.svg',
+  imgWidth: '600',
+  imgHeight: '365'
 }
 
 export const http3 = {
@@ -72,7 +72,7 @@ export const http3 = {
   buttonLabel: 'View Article',
   url: 'https://medium.com/@matthew.digiorgio',
   profile: '',
-  img: '/http.svg',
+  img: '/thesis.svg',
   alt: 'Image',
   imgWidth: '400',
   imgHeight: '400'
