@@ -23,6 +23,7 @@ const Content = ({
   topLine,
   headLine,
   description,
+  url,
   img,
   profile,
   imgWidth,
@@ -41,7 +42,9 @@ const Content = ({
                 <TopLine lightTopLine={lightTopLine}>{topLine}</TopLine>
                 <Heading lightText={lightText}>{headLine}</Heading>
                 <Subtitle lightTextDesc={lightTextDesc}>{description}</Subtitle>
-                <Button big fontBig primary>{buttonLabel}</Button>
+                <a href={url} target='_blank'>
+                  <Button big fontBig primary>{buttonLabel}</Button>
+                </a>
               </TextWrapper>
             </InfoColumn>
             <InfoColumn>
