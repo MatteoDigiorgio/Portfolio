@@ -42,7 +42,7 @@ const Content = ({
                 <TopLine lightTopLine={lightTopLine}>{topLine}</TopLine>
                 <Heading lightText={lightText}>{headLine}</Heading>
                 <Subtitle lightTextDesc={lightTextDesc}>{description}</Subtitle>
-                <a href={url} target='_blank'>
+                <a href={url} target='_blank' rel='noreferrer'>
                   <Button big fontBig primary>{buttonLabel}</Button>
                 </a>
               </TextWrapper>
