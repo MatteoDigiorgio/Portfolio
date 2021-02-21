@@ -13,7 +13,7 @@ export const profile = {
   url: 'https://github.com/MatteoDigiorgio',
   profile: 'true',
   alt: 'Image',
-  img: '/me.svg',
+  img: '/me.jpg',
   imgWidth: '300',
   imgHeight: '300'
 }
@@ -33,7 +33,7 @@ export const portfolio = {
   url: 'https://github.com/MatteoDigiorgio/Portfolio',
   profile: '',
   alt: 'Image',
-  img: '/portfolio.svg',
+  img: '/portfolio.jpg',
   imgWidth: '600',
   imgHeight: '365'
 }
