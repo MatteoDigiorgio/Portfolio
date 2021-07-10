@@ -27,6 +27,7 @@ const Navbar = () => {
             <NavMenu onClick={handleClick} click={click}>
               <NavItem>
                 <NavLinks
+                  onClick={handleClick} click={click}
                   to="profile"
                   smooth={true}
                   duration={500}
@@ -39,6 +40,7 @@ const Navbar = () => {
               </NavItem>
               <NavItem>
                 <NavLinks
+                  onClick={handleClick} click={click}
                   to="projects"
                   smooth={true}
                   duration={500}
@@ -51,6 +53,7 @@ const Navbar = () => {
               </NavItem>
               <NavItem>
                 <NavLinks
+                  onClick={handleClick} click={click}
                   to="articles"
                   smooth={true}
                   duration={500}
@@ -63,6 +66,7 @@ const Navbar = () => {
               </NavItem>
               <NavItem>
                 <NavLinks
+                  onClick={handleClick} click={click}
                   to="social"
                   smooth={true}
                   duration={500}
