@@ -5,6 +5,10 @@ export const Info = styled.div`
   color: #fff;
   padding: 220px 0;
   background: ${({ lightBg }) => (lightBg ? '#BCC6E0' : '#1B2339')};
+
+  @media screen and (max-width: 991px) {
+    padding: 50px;
+  }
 `
 
 export const ContentContainer = styled.div`
@@ -33,9 +37,14 @@ export const InfoRow = styled.div`
   flex-wrap: wrap;
   align-items: center;
   flex-direction: ${({ imgStart }) => (imgStart ? 'row-reverse' : 'row')};
+
+  @media screen and (max-width: 991px) {
+    flex-wrap: wrap-reverse;
+  }
 `
 
 export const InfoColumn = styled.div`
+  text-align: center;
   margin-bottom: 15px;
   padding-right: 15px;
   padding-left: 15px;
@@ -55,7 +64,7 @@ export const TextWrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items:  center;
-  max-width: 540px;
+  max-width: 100%;
   padding-top: 0;
   padding-bottom: 60px;
   align-items: center;
@@ -68,9 +77,10 @@ export const TextWrapper = styled.div`
 export const TopLine = styled.div`
   font-size: 15px;
   text-transform: uppercase;
+  font-weight: bold;
   line-height: 16px;
   letter-spacing: 1.4px;
-  margin-bottom: 16px;
+  margin-bottom: -25px;
   color: ${({ lightTopLine }) => (lightTopLine ? '#a9b3c1' : '#4B59F7')};
 `
 
@@ -79,12 +89,14 @@ export const Heading = styled.h1`
   font-size: 48px;
   line-height: 1.1.%;
   color: ${({ lightText }) => (lightText ? '#f7f8a' : '#1c2237')};
+  text-shadow: 3px 3px 30px ${({ lightText }) => (lightText ? '#949494' : '#1c1c1c')};
 `
 
 export const Subtitle = styled.p`
-  max-width: 440px;
+  max-width: 100%;
   margin-bottom: 35px;
   font-size: 18px;
+  font-style: italic;
   line-height: 24px;
   color: ${({ lightTextDesc }) => (lightTextDesc ? '#a9b3c1' : '#1c2237')};
 `
@@ -100,7 +112,7 @@ export const Button = styled.button`
   outline: none;
   border: none;
   cursor: pointer;
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.529);
+  box-shadow: 5px 5px 10px #1c1c1c;
 
   &:hover{
     transition: all 0.3s ease-out;
@@ -114,7 +126,7 @@ export const Button = styled.button`
 `
 
 export const ImgWrapper = styled.div`
-  max-width: 550px;
+  max-width: 100%;
   height: 100%;
   margin: 0 0 10px 0;
   padding-right: 0;
@@ -122,7 +134,7 @@ export const ImgWrapper = styled.div`
 `
 
 export const Img = styled(Image)`
-  max-width: 555px;
+  max-width: 100%;
   margin: 0 0 10px 0;
   border-radius: ${({ profile }) => (profile ? '50%' : '0px')};
 `
