@@ -104,6 +104,7 @@ export const Subtitle = styled.p`
 export const Button = styled.button`
   justify-content: center;
   border-radius: 8px;
+  margin-bottom: 15px;
   background: ${({ primary }) => (primary ? '#4B59F7' : '#0467FB')};
   white-space: nowrap;
   padding: ${({ big }) => (big ? '12px 64px' : '10px 20px')};

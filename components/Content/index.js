@@ -20,12 +20,15 @@ const Content = ({
   lightText,
   lightTextDesc,
   buttonLabel,
+  buttonLabelVisit,
   topLine,
   headLine,
   description,
   url,
+  urlVisit,
   img,
   profile,
+  visitable,
   imgWidth,
   imgHeight,
   alt,
@@ -45,6 +48,15 @@ const Content = ({
                 <a href={url} target='_blank' rel='noreferrer'>
                   <Button big fontBig primary>{buttonLabel}</Button>
                 </a>
+
+                {
+                  visitable &&
+                  <a href={urlVisit} target='_blank' rel='noreferrer'>
+                    <Button big fontBig primary>{buttonLabelVisit}</Button>
+                  </a>
+                }
+
+
               </TextWrapper>
             </InfoColumn>
             <InfoColumn>
