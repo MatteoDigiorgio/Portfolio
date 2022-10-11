@@ -56,7 +56,6 @@ const Content = ({
                   </a>
                 }
 
-
               </TextWrapper>
             </InfoColumn>
             <InfoColumn>
