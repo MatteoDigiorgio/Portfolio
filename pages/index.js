@@ -5,6 +5,8 @@ import {
   profile,
   portfolio,
   foodazon,
+  linkedin,
+  amazon,
   http3,
 } from "../components/Content/data";
 import Footer from "../components/Footer";
