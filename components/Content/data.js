@@ -83,7 +83,7 @@ export const http3 = {
   description: "Thesis on the protocol of the future: HTTP/3",
   visitable: "",
   downloadable: "true",
-  buttonLabel: "View Article",
+  buttonLabel: "Download PDF",
   buttonLabelVisit: "",
   url: "/Matteo_Digiorgio_Thesis.pdf",
   urlVisit: "",

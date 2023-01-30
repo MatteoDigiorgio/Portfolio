@@ -64,7 +64,7 @@ const Content = ({
                 {downloadable && (
                   <a href={url} download target="_blank" rel="noreferrer">
                     <Button big fontBig primary>
-                      {buttonLabelVisit}
+                      {buttonLabel}
                     </Button>
                   </a>
                 )}
