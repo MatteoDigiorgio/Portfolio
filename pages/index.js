@@ -1,8 +1,13 @@
-import Head from 'next/head'
-import Navbar from '../components/Navbar'
-import Content from '../components/Content'
-import { profile, portfolio, foodazon, http3 } from '../components/Content/data'
-import Footer from '../components/Footer'
+import Head from "next/head";
+import Navbar from "../components/Navbar";
+import Content from "../components/Content";
+import {
+  profile,
+  portfolio,
+  foodazon,
+  http3,
+} from "../components/Content/data";
+import Footer from "../components/Footer";
 
 export default function Home() {
   return (
@@ -19,6 +24,8 @@ export default function Home() {
       <section id="projects">
         <Content {...portfolio}></Content>
         <Content {...foodazon}></Content>
+        <Content {...linkedin}></Content>
+        <Content {...amazon}></Content>
       </section>
       <section id="articles">
         <Content {...http3}></Content>
@@ -27,5 +34,5 @@ export default function Home() {
         <Footer></Footer>
       </section>
     </>
-  )
+  );
 }
