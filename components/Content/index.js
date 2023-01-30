@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 import {
   Info,
   ContentContainer,
@@ -10,8 +10,8 @@ import {
   Subtitle,
   Button,
   ImgWrapper,
-  Img
-} from './ContentElements'
+  Img,
+} from "./ContentElements";
 
 const Content = ({
   lightBg,
@@ -29,12 +29,12 @@ const Content = ({
   img,
   profile,
   visitable,
+  downloadable,
   imgWidth,
   imgHeight,
   alt,
-  start
+  start,
 }) => {
-
   return (
     <>
       <Info lightBg={lightBg}>
@@ -45,29 +45,47 @@ const Content = ({
                 <TopLine lightTopLine={lightTopLine}>{topLine}</TopLine>
                 <Heading lightText={lightText}>{headLine}</Heading>
                 <Subtitle lightTextDesc={lightTextDesc}>{description}</Subtitle>
-                <a href={url} target='_blank' rel='noreferrer'>
-                  <Button big fontBig primary>{buttonLabel}</Button>
-                </a>
-
-                {
-                  visitable &&
-                  <a href={urlVisit} target='_blank' rel='noreferrer'>
-                    <Button big fontBig primary>{buttonLabelVisit}</Button>
+                {!downloadable && (
+                  <a href={url} target="_blank" rel="noreferrer">
+                    <Button big fontBig primary>
+                      {buttonLabel}
+                    </Button>
                   </a>
-                }
+                )}
 
+                {visitable && (
+                  <a href={urlVisit} target="_blank" rel="noreferrer">
+                    <Button big fontBig primary>
+                      {buttonLabelVisit}
+                    </Button>
+                  </a>
+                )}
+
+                {downloadable && (
+                  <a download={url} target="_blank" rel="noreferrer">
+                    <Button big fontBig primary>
+                      {buttonLabelVisit}
+                    </Button>
+                  </a>
+                )}
               </TextWrapper>
             </InfoColumn>
             <InfoColumn>
               <ImgWrapper start={start}>
-                <Img src={img} alt={alt} profile={profile} width={imgWidth} height={imgHeight} />
+                <Img
+                  src={img}
+                  alt={alt}
+                  profile={profile}
+                  width={imgWidth}
+                  height={imgHeight}
+                />
               </ImgWrapper>
             </InfoColumn>
           </InfoRow>
         </ContentContainer>
       </Info>
     </>
-  )
-}
+  );
+};
 
-export default Content
+export default Content;
