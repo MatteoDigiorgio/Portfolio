@@ -7,6 +7,7 @@ import {
   foodazon,
   linkedin,
   amazon,
+  buymeacoffee,
   http3,
 } from "../components/Content/data";
 import Footer from "../components/Footer";
