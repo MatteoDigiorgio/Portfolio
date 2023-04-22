@@ -132,7 +132,7 @@ export const buymeacoffee = {
   visitable: "true",
   downloadable: "",
   buttonLabel: "View Code",
-  buttonLabelVisit: "Visit Amazon Clone",
+  buttonLabelVisit: "Visit Buy Matteo A Coffee",
   url: "https://github.com/MatteoDigiorgio/BuyMeACoffee",
   urlVisit: "https://buymeacoffee.digiorgio.dev",
   profile: "",
