@@ -137,7 +137,7 @@ export const buymeacoffee = {
   urlVisit: "https://buymeacoffee.digiorgio.dev",
   profile: "",
   alt: "Image",
-  img: "/buymeacoffee.jpg",
+  img: "/buymeacoffe.jpg",
   imgWidth: "600",
   imgHeight: "365",
 };
