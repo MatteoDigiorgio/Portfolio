@@ -28,6 +28,7 @@ export default function Home() {
         <Content {...foodazon}></Content>
         <Content {...linkedin}></Content>
         <Content {...amazon}></Content>
+        <Content {...buymeacoffee}></Content>
       </section>
       <section id="articles">
         <Content {...http3}></Content>
